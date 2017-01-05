@@ -1,12 +1,8 @@
 ﻿using Newtonsoft.Json.Linq;
 using System;
-using System.Collections.Generic;
 using System.ComponentModel;
 using System.IO;
-using System.Linq;
 using System.Net;
-using System.Text;
-using System.Threading.Tasks;
 
 
 namespace BookShelfApp
@@ -19,7 +15,7 @@ namespace BookShelfApp
             Console.WriteLine("*** Let's search the Google Books API with a search term ***");
             Console.Write("Enter Search Term: ");
             string searchTerm = Console.ReadLine();
-            //string isbn = "1933354313";
+            
 
             string jsonResponse = SearchGoogleBooks(searchTerm);
 
@@ -52,7 +48,7 @@ namespace BookShelfApp
         //This method searches the GoogleBooks API with a given search term
         private static string SearchGoogleBooks(string searchTerm)
         {
-            string GoogleBooksApiKey = "AIzaSyBaf_7wmQ6Ve26VpFEocW7YHQCoRFV3prQ";
+            string GoogleBooksApiKey = "Fill in your Google Books API Key here";
 
             WebRequest request = WebRequest.Create("https://www.googleapis.com/books/v1/volumes?q=" + searchTerm + "&key=" + GoogleBooksApiKey);
             WebResponse response = request.GetResponse();

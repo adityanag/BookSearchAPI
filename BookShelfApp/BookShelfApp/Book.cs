@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿// The model for the book. Very simple, but contains everything I needed to describe a book. 
 
 namespace BookShelfApp
 {
