@@ -48,7 +48,7 @@ namespace BookShelfApp
         //This method searches the GoogleBooks API with a given search term
         private static string SearchGoogleBooks(string searchTerm)
         {
-            string GoogleBooksApiKey = "Fill in your Google Books API Key here";
+            string GoogleBooksApiKey = "AIzaSyCy4jqTONhRa3GXaZIfRMs1KJ4KE8Gjr-8";
 
             WebRequest request = WebRequest.Create("https://www.googleapis.com/books/v1/volumes?q=" + searchTerm + "&key=" + GoogleBooksApiKey);
             WebResponse response = request.GetResponse();
