@@ -82,7 +82,7 @@ namespace BookShelfApp
         //This method searches the GoogleBooks API with a given search term. Only 20 results will be returned.
         private static string SearchGoogleBooks(string searchTerm)
         {
-            string GoogleBooksApiKey = "AIzaSyCy4jqTONhRa3GXaZIfRMs1KJ4KE8Gjr-8";
+            string GoogleBooksApiKey = "Your Google Books API Key here";
             //maxResults is set to 20 so that we only get a small list
             WebRequest request = WebRequest.Create("https://www.googleapis.com/books/v1/volumes?q=" + searchTerm +"&maxResults=20&orderBy=relevance&projection=full&key=" + GoogleBooksApiKey);
             WebResponse response = request.GetResponse();
